@@ -57,7 +57,8 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS': [os.path.join(BASE_DIR, "templates")], # Django 2.x
+        'DIRS': [BASE_DIR / 'templates'], # Django 3.x
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,3 +122,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#업로드 파일 관리, 각 앱에서 업로드하는 파일들을 한 폴더에 모아 관리, 미디어라는 파일이 생기미
+MEDIA_URL='/media/'
+# MEDIA_ROOT=os.path.join(BASE_DIR, 'media') # django 2.x
+MEDIA_ROOT = BASE_DIR / "media" # django 3.x
+
+
