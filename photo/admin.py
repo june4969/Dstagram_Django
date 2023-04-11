@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Photo
-
+from .models import Photo, User
 
 
 
@@ -11,5 +10,7 @@ class PhotoAdmin(admin.ModelAdmin):
     list_filter = ['created', 'updated', 'author']
     search_fields = ['text', 'created']
     ordering = ['-updated', '-created']
-    
+
+admin.site.register(User) #User 모델 등록
 admin.site.register(Photo, PhotoAdmin) #포토, 포토 어드민 테이블 등록
+

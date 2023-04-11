@@ -38,6 +38,7 @@ INSTALLED_APPS=[
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'photo', #포토앱등록
+    'accounts',
 ]
 
 
@@ -129,3 +130,7 @@ MEDIA_URL='/media/'
 MEDIA_ROOT = BASE_DIR / "media" # django 3.x
 
 
+
+AUTH_USER_MODEL = 'photo.User'
+
+LOGIN_REDIRECT_URL = '/' # 목록 화면으로 이동
