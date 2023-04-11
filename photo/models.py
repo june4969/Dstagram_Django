@@ -32,3 +32,4 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
 
 
+
