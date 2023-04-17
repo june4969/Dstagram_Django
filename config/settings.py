@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
+import sys
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -39,6 +39,8 @@ INSTALLED_APPS=[
     'django.contrib.staticfiles',
     'photo', #포토앱등록
     'accounts',
+    'disqus',
+    'django.contrib.sites',
 ]
 
 
@@ -134,3 +136,11 @@ MEDIA_ROOT = BASE_DIR / "media" # django 3.x
 AUTH_USER_MODEL = 'photo.User'
 
 LOGIN_REDIRECT_URL = '/' # 목록 화면으로 이동
+
+
+sys.modules['django.utils.six.moves.urllib.parse']=__import__('six.moves.urllib_parse', fromlist=['urlencode'])
+sys.modules['django.utils.six.moves.urllib.request']=__import__('six.moves.urllib_request', fromlist=['urlopen'])
+
+
+DISQUS_WEBSITE_SHORTNAME = 'Dstagram-Se3' # Disqus 사이트에 작성한 이름을 써야함
+SITE_ID = 1 # sites 앱에 등록된 현재 사이트의 번호, 기본적으로 1번으로 설정s
