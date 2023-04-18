@@ -1,6 +1,7 @@
 *.pyc
 *~
 /venv
+/vnv_j
 __pycache__
 db.sqlite3
 .DS_Store
