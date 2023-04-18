@@ -28,7 +28,7 @@ sys.modules['django.utils.six.moves.urllib.request']=__import__('six.moves.urlli
 SECRET_KEY = '(ajcfo*va1-6b@6lh_wm$n$$klhdy+*c2^y$22e&iyykga+))&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True,
+DEBUG = True
 ALLOWED_HOSTS = ['june4969.pythonanywhere.com']
 
 
