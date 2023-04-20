@@ -12,6 +12,7 @@ urlpatterns = [
     path('upload/', PhotoUploadView.as_view(), name='photo_upload'),
     path('delete/<int:pk>/', PhotoDeleteView.as_view(), name='photo_delete'),
     path('update/<int:pk>/', PhotoUpdateView.as_view(), name='photo_update'),
+
 ]
 
 

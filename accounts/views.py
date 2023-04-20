@@ -13,3 +13,4 @@ def register(request):
     else:#회원가입 내용을 입력하는 상황
         user_form = RegisterForm()
     return render(request, 'registration/register.html', {'form':user_form})
+

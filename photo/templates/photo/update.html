@@ -7,9 +7,15 @@
     <form action="" method="post" enctype="multipart/form-data">
       {{form.as_p}}
       {% csrf_token %}
-    <input type="submit" class="btn btn-primary" value="Update">
+      <input type="submit" class="btn btn-primary" value="Update">
+      <button type="button" class="btn btn-danger" id="cancel-btn">Cancel</button>
     </form>
   </div>
   <div class="col-md-2"></div>
 </div>
+<script>
+  document.getElementById("cancel-btn").addEventListener("click", function() {
+    window.history.back();
+  });
+</script>
 {% endblock %}

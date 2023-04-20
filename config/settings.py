@@ -146,3 +146,4 @@ LOGIN_REDIRECT_URL = '/' # 목록 화면으로 이동
 
 DISQUS_WEBSITE_SHORTNAME = 'ps34' # Disqus 사이트에 작성한 이름을 써야함
 SITE_ID = 1 # sites 앱에 등록된 현재 사이트의 번호, 기본적으로 1번으로 설정
+
