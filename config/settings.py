@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -45,6 +45,7 @@ INSTALLED_APPS=[
     'accounts',
     'disqus',
     'django.contrib.sites',
+
 ]
 
 
@@ -129,6 +130,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
+
 
 #업로드 파일 관리, 각 앱에서 업로드하는 파일들을 한 폴더에 모아 관리, 미디어라는 파일이 생기미
 MEDIA_URL='/media/'
@@ -146,4 +149,5 @@ LOGIN_REDIRECT_URL = '/' # 목록 화면으로 이동
 
 DISQUS_WEBSITE_SHORTNAME = 'ps34' # Disqus 사이트에 작성한 이름을 써야함
 SITE_ID = 1 # sites 앱에 등록된 현재 사이트의 번호, 기본적으로 1번으로 설정
+
 

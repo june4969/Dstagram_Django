@@ -3,8 +3,12 @@ from .models import Photo
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import get_object_or_404, render
+from django.views.generic.detail import DetailView
+from django.contrib.auth.models import User
 
-@login_required
+
+
 def photo_list(request):
     photos = Photo.objects.all()
     return render(request, 'photo/list.html', {'photos': photos})
@@ -32,3 +36,15 @@ class PhotoUpdateView(LoginRequiredMixin, UpdateView):
     fields = ['photo', 'text']
     template_name = 'photo/update.html'
 
+
+
+class PhotoDetailView(LoginRequiredMixin, DetailView):
+    login_url = '/accounts/login/' # 로그인 페이지의 URL 설정
+    redirect_field_name = '' # 로그인 후 돌아갈 URL 설정
+
+
+
+# class UserDetailView(LoginRequiredMixin, DetailView):
+#     model = User
+#     template_name = 'user_detail.html'
+#     context_object_name = 'user_object'

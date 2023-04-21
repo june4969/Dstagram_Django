@@ -1,0 +1,92 @@
+/* 폼폼푸린 로고 */
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F8BBD0;
+}
+
+/* 네비게이션 메뉴 */
+.nav {
+  margin-right: 0;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #F8BBD0;
+}
+
+
+.panel-default {
+  border-color: #ddd;
+}
+
+/* 게시글 카드 */
+.panel-default {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/*사진*/
+.panel-default img {
+  max-width: 10%;
+  margin-bottom: 1rem;
+
+}
+
+.panel-default p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+
+
+
+.panel-default .btn-info {
+  background-color: #F8BBD0;
+  color: #fff;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.panel-default .btn-success {
+  background-color: transparent;
+  color: #FFC0CB;
+  border-color: #FFC0CB;
+}
+
+.panel-default .text-right {
+  text-align: right;
+}
+
+
+.btn-primary{
+    background-color: #F8BBD0;
+    color: #fff;
+    border: none;
+    margin-bottom: 1rem;
+    top: 290px;
+    left : 399px;
+    position: absolute;
+
+}
+
+.btn-primary:hover {
+  background-color: #F8BBD0; /* 변경하고 싶은 배경 색상으로 대체 */
+}
+
+

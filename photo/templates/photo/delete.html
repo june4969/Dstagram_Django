@@ -1,7 +1,15 @@
 {% extends 'base.html' %}
 {% block title %}- Delete{% endblock %}
 {% block content %}
-<div class="row">
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8 panel panel-default">
         <div class="alert alert-info">
@@ -12,12 +20,14 @@
             <input type="submit" class="btn btn-primary" value="Confirm">
             <button type="button" class="btn btn-danger" id="cancel-btn">Cancel</button>
         </form>
+        </div>
+        <div class="col-md-2"></div>
     </div>
-    <div class="col-md-2"></div>
-</div>
-<script>
-    document.getElementById("cancel-btn").addEventListener("click", function() {
-        window.history.back();
-    });
-</script>
+    <script>
+        document.getElementById("cancel-btn").addEventListener("click", function() {
+            window.history.back();
+        });
+    </script>
 {% endblock %}
+</body>
+
