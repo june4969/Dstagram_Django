@@ -64,8 +64,8 @@
 }
 
 .panel-default .btn-success {
-  background-color: transparent;
-  color: #FFC0CB;
+  background-color: fa6498;
+  color: white;
   border-color: #FFC0CB;
 }
 
@@ -73,21 +73,49 @@
   text-align: right;
 }
 
-
+/*버튼*/
 .btn-primary{
     background-color: #F8BBD0;
     color: #fff;
     border: none;
     margin-bottom: 1rem;
-    top: 290px;
-    left : 399px;
-    position: absolute;
+    position: relative;
+
 
 }
 
 
 .btn-primary:hover {
-  background-color: #F8BBD0; /* 변경하고 싶은 배경 색상으로 대체 */
+  background-color: #F8BBD0;
 }
 
 
+.alert.alert-info {
+  font-size: 18px; /* 변경하고 싶은 폰트 크기로 대체 */
+  padding: 20px; /* 변경하고 싶은 내부 여백 크기로 대체 */
+}
+
+
+.btn{
+    background-color: #F8BBD0;
+    color: #fff;
+    border: none;
+    margin-bottom: 1rem;
+    position: relative;
+    margin-right: 10px;
+}
+
+
+
+.btn:hover{
+    background-color: #F8BBD0;
+
+}
+
+.btn-outline-success{
+    background-color: #fa6498;
+}
+
+.btn-outline-danger{
+    background-color: #e00752;
+}
