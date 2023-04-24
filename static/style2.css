@@ -64,7 +64,7 @@
 }
 
 .panel-default .btn-success {
-  background-color: fa6498;
+  background-color: #fa6498;
   color: white;
   border-color: #FFC0CB;
 }
@@ -118,4 +118,45 @@
 
 .btn-outline-danger{
     background-color: #e00752;
+}
+
+
+/* 회원 정보 */
+
+.user_information {
+  font-size: 2rem;
+  color: #F8BBD0;
+  margin-bottom: 1rem;
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+
+
+
+.Userbox {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.id,
+.email,
+.birthday,
+.firstName,
+.gender,
+.lastName {
+    width: 100%;
+    border-bottom: 1px solid black;
+
+
 }

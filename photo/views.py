@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404, render
 from django.views.generic.detail import DetailView
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 
 
 
@@ -44,7 +44,9 @@ class PhotoDetailView(LoginRequiredMixin, DetailView):
 
 
 
-# class UserDetailView(LoginRequiredMixin, DetailView):
-#     model = User
-#     template_name = 'user_detail.html'
-#     context_object_name = 'user_object'
+
+class UserDetailView(LoginRequiredMixin, DetailView):
+    model = get_user_model()
+    template_name = 'photo/user_detail.html'
+    context_object_name = 'user_object'
+

@@ -3,7 +3,8 @@ from .views import *
 from .models import Photo
 from .views import PhotoDetailView
 from django.views.generic.detail import DetailView
-# from .views import UserDetailView
+from .views import UserDetailView
+
 
 app_name = 'photo'
 
@@ -15,7 +16,8 @@ urlpatterns = [
     path('delete/<int:pk>/', PhotoDeleteView.as_view(), name='photo_delete'),
     path('update/<int:pk>/', PhotoUpdateView.as_view(), name='photo_update'),
     path('list/', PhotoDetailView.as_view(), name='photo_list'),
-    # path('users/<int:user.id>/', UserDetailView.as_view(), name='user_detail'),
-]
+    path('users/<int:pk>/', UserDetailView.as_view(), name='user_detail'),
 
+
+]
 

@@ -1,9 +1,22 @@
-<!--{% extends 'base.html' %}-->
+{% extends 'base.html' %}
 
-<!--{% block title %}- User Detail{% endblock %}-->
+{% block title %}- User Detail{% endblock %}
 
-<!--{% block content %}-->
-<!--  <h2>User Detail</h2>-->
-<!--  <p>Username: {{ user_object.username }}</p>-->
-<!--  <p>Email: {{ user_object.email }}</p>-->
-<!--{% endblock %}-->
+{% block content %}
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="text-align: left;" >
+      <h1 class="user_information">회원정보</h1>
+        <div class="Userbox">
+          <p class="id">아이디: {{ user_object.username}}</p>
+          <p class="firstName">성: {{ user_object.first_name }}</p>
+          <p class="lastName">이름: {{ user_object.last_name }}</p>
+          <p class="gender">성별: {{ user_object.profile.gender }}</p>
+          <p class="birthday">생일: {{ user_object.profile.birthday }}</p>
+            <p class="email">이메일: {{ user_object.email }}</p>
+        </div>
+    </div>
+  </div>
+
+{% endblock %}
+
