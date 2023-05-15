@@ -1,7 +1,7 @@
 # Result
 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5235b883-9d86-4398-81f6-f3038077bce0/Untitled.png]
+![Untitled.png]
 | 사용 언어 | Python |
 | --- | --- |
 | 프레임 워크 | Django |
