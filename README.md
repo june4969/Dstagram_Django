@@ -1,7 +1,7 @@
 # Result
 
 
-!(결과 이미지 )[Untitled.png]
+
 | 사용 언어 | Python |
 | --- | --- |
 | 프레임 워크 | Django |
