@@ -1,5 +1,6 @@
 # Result
 
+![Untitled](https://github.com/june4969/Dstagram_Django/assets/127813398/b5358843-11e3-49cf-bcb5-af49bff20a6f)
 
 
 | 사용 언어 | Python |
